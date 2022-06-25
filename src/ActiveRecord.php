@@ -51,7 +51,7 @@ class ActiveRecord
 
     public function getFilter($login)
     {
-        $comand = "SELECT * FROM messages WHERE login = 'user'";
+        $command = "SELECT * FROM messages WHERE login = 'user'";
         $db = $this->l->prepare($command);
         $db->execute();
         return $db->fetchAll();
